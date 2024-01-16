@@ -400,8 +400,8 @@ a {
 
     @media(max-width:400px){
     .featureBox{
-        height: 160px;
-        width: 140px;
+        height: 140px;
+        width: 120px;
     }
 }
 
