@@ -435,14 +435,7 @@ li {
         justify-content: center;
     }
 }
-   
 
-    @media(max-width:400px){
-    .featureBox{
-        height: 140px;
-        width: 140px;
-    }
-}
 @media(max-width:250px){
     *{
         overflow:scroll;
