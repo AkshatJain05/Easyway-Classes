@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, .1) 0%, rgba(89, 99, 212, 0.01) 35%, rgba(0, 212, 255, .04) 100%);
+}
+#one{
+    color: white;
+    /* background-color: blue; */
+    background: rgb(131, 78, 250);
+    background: linear-gradient(0deg, rgba(131, 58, 250, 1) 0%, rgba(107, 89, 204, 1) 72%, rgba(99, 99, 212, 1) 96%, rgba(89, 99, 206, 1) 98%, rgba(89, 99, 212, 0.01) 100%, rgba(252, 176, 69, 1) 100%);
+    font-size: xx-large;
+    font-weight: 600;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    
+}
+#two{
+  
+    width: 100%;
+    text-align: center;  
+    font-size: xx-large;  
+}
+#three{
+    height: 1100px;
+    width:100%;
+    border: 2px solid white;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+button{
+    height: 90px;
+    width: 320px;
+    border-radius: 10px;
+    /* background-color: blue; */
+    background: rgb(131, 78, 250);
+    background: linear-gradient(0deg, rgba(131, 58, 250, 1) 0%, rgba(107, 89, 204, 1) 72%, rgba(99, 99, 212, 1) 96%, rgba(89, 99, 206, 1) 98%, rgba(89, 99, 212, 0.01) 100%, rgba(252, 176, 69, 1) 100%);
+    color: white;
+    border: 3px solid black;
+    text-decoration: none;
+    
+}
+button:hover{
+    transform:scale(1.1);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+}

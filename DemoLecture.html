@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Lecture</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: 0px;
+    }
+    body{
+        background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, .1) 0%, rgba(89, 99, 212, 0.01) 35%, rgba(0, 212, 255, .04) 100%);
+    }
+    #easyway{
+    height: 40px;
+    text-align: center;
+    /* background-color: rgb(89,99,212); */
+    background: rgb(131, 78, 250);
+    background: linear-gradient(0deg, rgba(131, 58, 250, 1) 0%, rgba(107, 89, 204, 1) 72%, rgba(99, 99, 212, 1) 96%, rgba(89, 99, 206, 1) 98%, rgba(89, 99, 212, 0.01) 100%, rgba(252, 176, 69, 1) 100%);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textDesign{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+    #demoLecture{
+    height: 500px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-content: center;
+    gap:30px;
+    margin: 20px;
+}
+#video{
+    position: absolute;
+    z-index: 7;
+}
+#tvImage1{
+    position: relative;
+    right: 10px;
+    bottom:10px;
+    height: 360px;
+}
+@media (max-width:1125px) {
+    #demoLecture{
+        height:auto;
+
+    }
+}
+@media(max-width:600px){
+    #video{
+        height: 240px;
+        width: 350px;
+        position: relative;
+        z-index: 4;
+    }
+    #tvImage1{
+        height: 270px;
+        width: 360px;
+        position: relative;
+        bottom: 250px;
+        right:5px;
+        z-index: 1;
+    }
+
+}
+</style>
+<body>
+    <div id="easyway">
+        <center>
+          <h1>EASYWAY CLASSES</h1>
+        </center>
+      </div>
+      <hr>
+<section>
+    <div class="gap"></div>
+    <div class="line"></div>
+    <div class="gap"></div>
+
+
+          <div><h1 class="textDesign">Demo Lecture</h1></div>
+       <div id="demoLecture">
+          <div><iframe width="560" height="315" src="https://www.youtube.com/embed/hqd8qf4DTQw?si=JhYUnNguyCFzzoYZ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen  id="video"></iframe>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0AAACxCAMAAADOHZloAAAAn1BMVEX///8AAAApKSkiIiIhISEmJiYAAAajo6QeHh4bGxsJCQlxcnbs7OwWFhYaGhoNDQ0XGB9ISEgKCxIAAAxsbG8VFRk6Ojvm5uYUExouLi4AABOtrq8ODxUaHCLh4eISExtmZ2pGRUpUVFQbGSFhYWFPT0+zs7QiISk8O0A7Ozz29vZycnIXHSIlJCktLTA6OjoDExi+vr7R0tN5eXmZmpqYGfM/AAAEK0lEQVR4nO3XCVvaWBiGYcKSxtaFbRA6IMii02Ggtfb//7bJCUnIcs5rpLRkrnluASF4aXz4DgmNh95k0syaRJpFnU5pQyr/KPeEffvxl1V6xvKDpf1L9tyyqaqvRS+NRWD7Q+5/K9bKardbgcNV0W3BzYnuKvpY5lU1aSxa9jo6UquoXVTOVKh1e9ZaVWNZczmIOuUgsk4xj2uWkjyBfZR+9SSdVOeu8rD9f4R1mlGdu+/XdXFfUNpQ1cPPuV96SR3vvoGCtffRj+s8XHpf6mft+X6HOg7UUdZe39/xvuNAHcWsrF1jTR0rUyegjgN1FOooYZ3BjDoO1FGoo1BHoY5CHYU6CnUUczbYpY4DdRTqKKbOH411hzo2mTrXl96X+llQR2B2FOoo1FGoo1BH4ZilxHVa1LGJ67SpY5PW6VCn7FBnSR0r6ijUUaijUEehjkIdhToKdRTqKHGdFnVsqKNQR0nedzrUsaCOQh0led+hjg11FOoo1FGoo1BHydT5+9L7Uj/UUaijUEehjkId5VBnQx0r6ihxnTZ1bKijUEehjkIdhTrKkDoCs6MwOwqzo1BHYWUph9npUceKOsqQOgJ1FOooHLOUsI53w+w4sLIU6ijUUaijUEehjkIdxdThfMfF1LkN67Ra1CmjjhLXCcI6l96VGqKOQh3lUGdDHSvqKFvP86jjQh1lSB2BOoqpc0UdB1MnoI4DdZRDHc6V7aijUEehjkIdhToKdRRTp00dB+oo1FGoo1BHSeu0qVNGHYWVpSR12syOhanTCusE1LEwdTrMjgN1lO2hzhV1bKijUEehjkIdhToKdRTqKNRRqKOYOk3qOFBHoY5CHYU6CnUU6iimzoQ6DqbOnjoOzI5CHYU6SlonoE4ZdZTkmBVQx4I6CnWUredH7zvUsTF1RtRxSI5Z1LFhdpTXtM7Ndhh+hT5tP/1nDSPFxydYGMN9Wie4mU6/pabT+bR/8Pm9BoNB/O0Nvm8u4dWrKz+tE/onYzbrdmdG9x3m43nZtPDQlA8v5k5Wv29ej+Q1eRc/vETX88vUmeXrzI51KjYah+bj+DatUapjFZaZnlbnV5WJ67weJ+m4OXn4Oya4n42U8zv+urRtNF6eSv78SR+im2rCV8cxFd6m4q84n9x/8fRy6eOm8SM3t+n8+t8vvWP1cL0vj4+3vvRe1cd0UIyzvfQu1cjQKxzEPJbV0dAf51EnY91frXInT9TJWM9XeV4tjqbntVguN5vNYzXhD25iy112VUXnhd1dXjO67HNGo9EkvI6+RB6/PD72er3XS0dw+fH5OWc1y81Dt/AxYz5PD1HFOOa0OfuJ9T2n7U+XzuDwOt89754LhVbxt6hPdFmND+uoVCT7SSL/cX6Q+YjzlrquyetkUf11unCh7MPb6E4kvfMGs7jMUjvryvoXF24jbZthafsAAAAASUVORK5CYII=" id="tvImage1">
+          </div>
+ 
+          <div><iframe width="560" height="315" src="https://www.youtube.com/embed/dKg4Z-aUSpo?si=yxRK6Z2WSRaeIQSe"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen id="video"></iframe>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0AAACxCAMAAADOHZloAAAAn1BMVEX///8AAAApKSkiIiIhISEmJiYAAAajo6QeHh4bGxsJCQlxcnbs7OwWFhYaGhoNDQ0XGB9ISEgKCxIAAAxsbG8VFRk6Ojvm5uYUExouLi4AABOtrq8ODxUaHCLh4eISExtmZ2pGRUpUVFQbGSFhYWFPT0+zs7QiISk8O0A7Ozz29vZycnIXHSIlJCktLTA6OjoDExi+vr7R0tN5eXmZmpqYGfM/AAAEK0lEQVR4nO3XCVvaWBiGYcKSxtaFbRA6IMii02Ggtfb//7bJCUnIcs5rpLRkrnluASF4aXz4DgmNh95k0syaRJpFnU5pQyr/KPeEffvxl1V6xvKDpf1L9tyyqaqvRS+NRWD7Q+5/K9bKardbgcNV0W3BzYnuKvpY5lU1aSxa9jo6UquoXVTOVKh1e9ZaVWNZczmIOuUgsk4xj2uWkjyBfZR+9SSdVOeu8rD9f4R1mlGdu+/XdXFfUNpQ1cPPuV96SR3vvoGCtffRj+s8XHpf6mft+X6HOg7UUdZe39/xvuNAHcWsrF1jTR0rUyegjgN1FOooYZ3BjDoO1FGoo1BHoY5CHYU6CnUUczbYpY4DdRTqKKbOH411hzo2mTrXl96X+llQR2B2FOoo1FGoo1BH4ZilxHVa1LGJ67SpY5PW6VCn7FBnSR0r6ijUUaijUEehjkIdhToKdRTqKHGdFnVsqKNQR0nedzrUsaCOQh0led+hjg11FOoo1FGoo1BHydT5+9L7Uj/UUaijUEehjkId5VBnQx0r6ihxnTZ1bKijUEehjkIdhTrKkDoCs6MwOwqzo1BHYWUph9npUceKOsqQOgJ1FOooHLOUsI53w+w4sLIU6ijUUaijUEehjkIdxdThfMfF1LkN67Ra1CmjjhLXCcI6l96VGqKOQh3lUGdDHSvqKFvP86jjQh1lSB2BOoqpc0UdB1MnoI4DdZRDHc6V7aijUEehjkIdhToKdRRTp00dB+oo1FGoo1BHSeu0qVNGHYWVpSR12syOhanTCusE1LEwdTrMjgN1lO2hzhV1bKijUEehjkIdhToKdRTqKNRRqKOYOk3qOFBHoY5CHYU6CnUU6iimzoQ6DqbOnjoOzI5CHYU6SlonoE4ZdZTkmBVQx4I6CnWUredH7zvUsTF1RtRxSI5Z1LFhdpTXtM7Ndhh+hT5tP/1nDSPFxydYGMN9Wie4mU6/pabT+bR/8Pm9BoNB/O0Nvm8u4dWrKz+tE/onYzbrdmdG9x3m43nZtPDQlA8v5k5Wv29ej+Q1eRc/vETX88vUmeXrzI51KjYah+bj+DatUapjFZaZnlbnV5WJ67weJ+m4OXn4Oya4n42U8zv+urRtNF6eSv78SR+im2rCV8cxFd6m4q84n9x/8fRy6eOm8SM3t+n8+t8vvWP1cL0vj4+3vvRe1cd0UIyzvfQu1cjQKxzEPJbV0dAf51EnY91frXInT9TJWM9XeV4tjqbntVguN5vNYzXhD25iy112VUXnhd1dXjO67HNGo9EkvI6+RB6/PD72er3XS0dw+fH5OWc1y81Dt/AxYz5PD1HFOOa0OfuJ9T2n7U+XzuDwOt89754LhVbxt6hPdFmND+uoVCT7SSL/cX6Q+YjzlrquyetkUf11unCh7MPb6E4kvfMGs7jMUjvryvoXF24jbZthafsAAAAASUVORK5CYII=" id="tvImage1">
+
+    <div>
+    </div>
+ </section>
+</body>
+</html>
