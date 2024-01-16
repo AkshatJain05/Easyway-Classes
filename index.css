@@ -1,0 +1,446 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, .07) 0%, rgba(89, 99, 212, 0.02) 35%, rgba(0, 212, 255, .07) 100%);
+  
+}
+
+.textDesign {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+    bottom: 40px;
+}
+
+#navbar {
+    height: 55px;
+    width: 100%;
+    background: rgb(131, 78, 250);
+    background: linear-gradient(0deg, rgba(131, 58, 250, 1) 0%, rgba(107, 89, 204, 1) 72%, rgba(99, 99, 212, 1) 96%, rgba(89, 99, 206, 1) 98%, rgba(89, 99, 212, 0.01) 100%, rgba(252, 176, 69, 1) 100%);
+    /* background-color: rgb(89, 99, 212); */
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar0 {
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    line-height: 50px;
+    font-size: 1.6em;
+    font-weight: 900;
+    text-shadow: .5px .5px rgb(63, 61, 61);
+}
+
+.nava {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.nava:hover{
+    transition: all 0.5s linear;
+    font-weight: 600;
+}
+
+@media (max-width:950px) {
+    #navbar {
+        height: auto;
+        width: 100%;
+        background-color: rgb(89, 99, 212);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: space-around;
+        align-content: space-around;
+    }
+}
+
+@media (max-width:500px) {
+    #navbar {
+        height: auto;
+        width: 100%;
+        background-color: rgb(89, 99, 212);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: space-around;
+        align-content: space-around;
+    }
+
+}
+
+.space {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#design1 {
+    height: 420px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+#designPart {
+    height: 500px;
+}
+
+#typingAnimation {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+@media(max-width:1200px) {
+
+    #designPart {
+        height: 350px;
+
+    }
+
+    #typingAnimation {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:480px) {
+    #designPart {
+        height: 320px;
+    }
+}
+
+@media(max-width:395px) {
+    #designPart {
+        height: 250px;
+    }
+
+    #typingAnimation {
+        font-size: 1rem;
+    }
+}
+
+#box {
+    display: flex;
+    color: rgb(89, 99, 212);
+    animation-name: typing;
+    animation-duration: 12s;
+    animation-timing-function: steps(15.5);
+    animation-delay: 5s;
+    animation-iteration-count: 5;
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+@keyframes typing {
+    0% {
+        border-right: 2px solid black;
+        width: 0%;
+    }
+
+    100% {
+        border-right: 2px solid black;
+        width: 100%
+    }
+}
+
+#containerFeatureBox {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+
+
+@media (max-width:1200px) {
+    #containerFeatureBox {
+        height: auto;
+    }
+}
+
+.featureBox {
+    height: 180px;
+    width: 160px;
+    border-radius: 10px;
+    /* background-color: rgb(89, 99, 212); */
+    background: rgb(131, 78, 250);
+    background: linear-gradient(0deg, rgba(131, 58, 250, 1) 0%, rgba(107, 89, 204, 1) 72%, rgba(99, 99, 212, 1) 96%, rgba(89, 99, 206, 1) 98%, rgba(89, 99, 212, 0.01) 100%, rgba(252, 176, 69, 1) 100%);
+    box-shadow: 4px 4px 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+ 
+.featureBox:hover{
+    transform: scale(1.1);
+}
+.featureBox:active{
+    transform: scale(1);
+}
+
+.removeUnderline {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px white;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+#boxContainer {
+    width: 100%;
+    /* background-color: rgba(89, 99, 212, .3); */
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#facultiesDetail:hover {
+    transform: scale(1.1);
+}
+
+#image1 {
+    height: 270px;
+    width: 500px;
+    background-image: url("https://www.21kschool.com/blog/wp-content/uploads/2022/09/How-Online-Education-is-Better-Than-Classroom-Education.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    margin-top: 50px;
+    box-shadow: 6px 6px rgb(89, 99, 212);
+}
+
+#facultiesDetail {
+    height: 300px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 6px 6px rgb(89, 99, 212);
+}
+
+#image2 {
+    height: 150px;
+    width: 110px;
+    background-image: url("Akshat.jpg");
+    background-size: cover;
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#Detail {
+    font-size: 12px;
+    ;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.line {
+    height: 2px;
+    background-color: rgb(116, 116, 116);
+
+}
+
+.gap {
+    height: 60px;
+}
+
+.gap1 {
+    height: 30px;
+}
+
+.imgContainer {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.step1 {
+    width: 700px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 0.5px 0.5px black;
+
+}
+
+@media(max-width:1300px) {
+    .imgContainer {
+        height: auto;
+        /* margin: 20px; */
+    }
+
+    .step1 {
+        font-size: 20px;
+        margin: 40px;
+    }
+}
+
+.smallLine {
+    height: 1px;
+    background-color: rgb(91, 87, 87);
+    width: 100%;
+}
+
+@media(max-width:485px) {
+    .stepImg {
+        height: 300px;
+    }
+}
+
+.joinLink {
+    text-align: center;
+}
+
+#iconContainer {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#iconborder {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+}
+
+#icon {
+    font-size: 50px;
+    margin: 50px;
+
+}
+
+#icon:hover {
+    transform: scale(1.1);
+}
+
+#iconborder div h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+#designIcons {
+    height: 600px;
+}
+
+@media(max-width:1100px) {
+    #iconContainer {
+        height: auto;
+    }
+
+    #designIcons {
+        height: 400px;
+    }
+}
+
+@media(max-width:350px) {
+    #iconContainer {
+        height: auto;
+    }
+
+    #iconborder {
+        height: auto;
+    }
+
+    #designIcons {
+        height: 250px;
+    }
+}
+
+footer {
+    height: 350px;
+    width: 100%;
+    /* background-color: rgb(89, 99, 212); */
+    background: rgb(131, 78, 250);
+    background: linear-gradient(0deg, rgba(131, 58, 250, 1) 0%, rgba(107, 89, 204, 1) 72%, rgba(99, 99, 212, 1) 96%, rgba(89, 99, 206, 1) 98%, rgba(89, 99, 212, 0.01) 100%, rgba(252, 176, 69, 1) 100%);
+
+    font-size: 25px;
+    line-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media(max-width:1040px) {
+    footer {
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:250px){
+    *{
+        overflow:scroll;
+          
+    }
+}
+
+
