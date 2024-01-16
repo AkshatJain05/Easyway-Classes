@@ -396,18 +396,10 @@ a {
 @media(max-width:350px) {
     #iconContainer {
         height: auto;
-    }
-
-    @media(max-width:400px){
-    .featureBox{
-        height: 140px;
-        width: 140px;
-    }
-}
-
 
     #iconborder {
         height: auto;
+    }
     }
 
     #designIcons {
@@ -443,7 +435,14 @@ li {
         justify-content: center;
     }
 }
+   
 
+    @media(max-width:400px){
+    .featureBox{
+        height: 140px;
+        width: 140px;
+    }
+}
 @media(max-width:250px){
     *{
         overflow:scroll;
