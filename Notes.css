@@ -1,7 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family:sans-serif;
+}
 body{
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, .1) 0%, rgba(89, 99, 212, 0.01) 35%, rgba(0, 212, 255, .04) 100%);
 }
+
 #heading{
     margin: 20px;
     text-align: center;
@@ -25,9 +33,7 @@ body{
 }
 
 #two {
-    position: relative;
-    top: 60px;
-    left: 60px;
+    width: 100%;
     color: blue;
     font-size: xxx-large;
     text-align: center;
@@ -36,7 +42,7 @@ body{
         "one two three"
         "four five seven"
         "eight nine ten";
-    gap: 40px; 
+ gap:40px;
 }
 .step1{
     background: rgb(131, 78, 250);
@@ -46,9 +52,11 @@ body{
     width: 300px;
     font-size: x-large;
     font-weight: 600; 
+    border-radius:5px;
 }
 #three {
     grid-area: one;
+    padding: 5px;
 }
 
 a {
@@ -58,39 +66,48 @@ a {
 
 #four {
     grid-area: two;
+    padding: 5px;
 }
 
 #five {
     grid-area: three;
+    padding: 5px;
 }
 
 #six {
     grid-area: four;
+    padding: 5px;
 }
 
 
 #seven {
     grid-area: five;
+    padding: 5px;
 }
 
 #eight {
     grid-area: six;
+    padding: 5px;
 }
 
 #nine {
     grid-area: seven;
+    padding: 5px;
 }
 
 #ten {
     grid-area: eight;
+    padding: 5px;
 }
 
 #ten1 {
     grid-area: nine;
+    padding: 5px;
 }
 
 #ten3 {
     grid-area: ten;
+    padding: 5px;
 }
 
 .step1:hover{
