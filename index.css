@@ -56,7 +56,7 @@ body {
     transition: all 0.3s linear;
     font-weight: 600;
     padding:5px;
-    boder:2px solid yellow;
+    border:2px solid yellow;
     border-radius:5px;
 }
 
