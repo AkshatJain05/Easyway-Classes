@@ -301,13 +301,16 @@ body {
 
 .step1 {
     width: 700px;
-    font-size: 25px;
+    font-size: 24px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: serif;
     font-style: italic;
     font-weight: 200;
     text-shadow: 0.5px 0.5px rgb(0, 0, 0);
 
+}
+.step1 h1{
+    font-weight:bold;
 }
 
 @media(max-width:1300px) {
@@ -331,6 +334,21 @@ body {
 @media(max-width:485px) {
     .stepImg {
         height: 300px;
+    }
+    .textDesign{
+        font-size: 25px;
+       font-style: normal;
+       text-decoration: none;
+        font-weight: bold;
+    }
+    .step1 {
+        font-size: 13px;
+        font-weight:300;
+        margin: 20px;
+        font-style: normal;
+    }
+    .step1 h1{
+font-weight: 400;
     }
 }
 
